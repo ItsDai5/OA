@@ -8,8 +8,6 @@
     body { font-family: Calibri, Arial, sans-serif; margin: 0; background: #f7fafc; color: #1f2d3d; text-align: center; padding: 80px 24px; }
     h1 { color: #051c2c; font-size: 2.4rem; }
     p { font-size: 1.2rem; }
-    .boton-comenzar { margin-top: 32px; padding: 14px 36px; font-size: 1.1rem; font-family: inherit; color: #ffffff; background: #1e6fd9; border: none; border-radius: 8px; cursor: pointer; }
-    .boton-comenzar:hover { background: #1858b0; }
     table { margin: 40px auto 0; border-collapse: collapse; font-size: 1rem; }
     th, td { padding: 10px 20px; border-bottom: 1px solid #cbd5e0; }
     th { background: #051c2c; color: #ffffff; }
@@ -19,34 +17,28 @@
     .lover { background: #f9cfe0; }
     .midnights { background: #2b3a67; color: #ffffff; }
     .portada { width: 50px; height: 50px; object-fit: cover; border-radius: 4px; vertical-align: middle; margin-right: 8px; }
+    .boton-youtube { display: inline-block; padding: 8px 16px; color: #ffffff; background: #ff0000; border-radius: 6px; text-decoration: none; font-size: 0.95rem; }
+    .boton-youtube:hover { background: #cc0000; }
   </style>
 </head>
 <body>
   <h1>Diana Arévalo</h1>
-  <p>Hackathon de Salud Mental con IA · UCV</p>
-  <p>Pídele a Claude que cambie esta página.</p>
-  <p id="fecha-actual"></p>
-  <button class="boton-comenzar">Comenzar</button>
-  <button class="boton-comenzar">Primera hackaton con IA</button>
   <table>
     <thead>
-      <tr><th>Portada</th><th>Canción</th><th>Álbum</th><th>Año</th></tr>
+      <tr><th>Portada</th><th>Canción</th><th>Álbum</th><th>Año</th><th>Escuchar</th></tr>
     </thead>
     <tbody>
-      <tr class="fearless"><td><img class="portada" src="images/fearless.png" alt="Portada de Fearless"></td><td>✨ Love Story</td><td>Fearless</td><td>2008</td></tr>
-      <tr class="fearless"><td><img class="portada" src="images/fearless.png" alt="Portada de Fearless"></td><td>✨ You Belong with Me</td><td>Fearless</td><td>2008</td></tr>
-      <tr class="red"><td><img class="portada" src="images/red.png" alt="Portada de Red"></td><td>🧣 All Too Well</td><td>Red</td><td>2012</td></tr>
-      <tr class="album-1989"><td><img class="portada" src="images/1989.png" alt="Portada de 1989"></td><td>🗽 Shake It Off</td><td>1989</td><td>2014</td></tr>
-      <tr class="album-1989"><td><img class="portada" src="images/1989.png" alt="Portada de 1989"></td><td>🗽 Blank Space</td><td>1989</td><td>2014</td></tr>
-      <tr class="album-1989"><td><img class="portada" src="images/1989.png" alt="Portada de 1989"></td><td>🗽 Bad Blood</td><td>1989</td><td>2014</td></tr>
-      <tr class="album-1989"><td><img class="portada" src="images/1989.png" alt="Portada de 1989"></td><td>🗽 Style</td><td>1989</td><td>2014</td></tr>
-      <tr class="album-1989"><td><img class="portada" src="images/1989.png" alt="Portada de 1989"></td><td>🗽 Wildest Dreams</td><td>1989</td><td>2014</td></tr>
-      <tr class="lover"><td><img class="portada" src="images/lover.png" alt="Portada de Lover"></td><td>🦋 Cruel Summer</td><td>Lover</td><td>2019</td></tr>
-      <tr class="midnights"><td><img class="portada" src="images/midnights.png" alt="Portada de Midnights"></td><td>🌙 Anti-Hero</td><td>Midnights</td><td>2022</td></tr>
+      <tr class="fearless"><td><img class="portada" src="images/fearless.png" alt="Portada de Fearless"></td><td>✨ Love Story</td><td>Fearless</td><td>2008</td><td><a class="boton-youtube" href="https://youtu.be/8xg3vE8Ie_E" target="_blank" rel="noopener">▶ YouTube</a></td></tr>
+      <tr class="fearless"><td><img class="portada" src="images/fearless.png" alt="Portada de Fearless"></td><td>✨ You Belong with Me</td><td>Fearless</td><td>2008</td><td><a class="boton-youtube" href="https://youtu.be/VuNIsY6JdUw" target="_blank" rel="noopener">▶ YouTube</a></td></tr>
+      <tr class="red"><td><img class="portada" src="images/red.png" alt="Portada de Red"></td><td>🧣 All Too Well</td><td>Red</td><td>2012</td><td><a class="boton-youtube" href="https://youtu.be/tollGa3S0o8" target="_blank" rel="noopener">▶ YouTube</a></td></tr>
+      <tr class="album-1989"><td><img class="portada" src="images/1989.png" alt="Portada de 1989"></td><td>🗽 Shake It Off</td><td>1989</td><td>2014</td><td><a class="boton-youtube" href="https://youtu.be/nfWlot6h_JM" target="_blank" rel="noopener">▶ YouTube</a></td></tr>
+      <tr class="album-1989"><td><img class="portada" src="images/1989.png" alt="Portada de 1989"></td><td>🗽 Blank Space</td><td>1989</td><td>2014</td><td><a class="boton-youtube" href="https://youtu.be/e-ORhEE9VVg" target="_blank" rel="noopener">▶ YouTube</a></td></tr>
+      <tr class="album-1989"><td><img class="portada" src="images/1989.png" alt="Portada de 1989"></td><td>🗽 Bad Blood</td><td>1989</td><td>2014</td><td><a class="boton-youtube" href="https://youtu.be/QcIy9NiNbmo" target="_blank" rel="noopener">▶ YouTube</a></td></tr>
+      <tr class="album-1989"><td><img class="portada" src="images/1989.png" alt="Portada de 1989"></td><td>🗽 Style</td><td>1989</td><td>2014</td><td><a class="boton-youtube" href="https://youtu.be/-CmadmM5cOk" target="_blank" rel="noopener">▶ YouTube</a></td></tr>
+      <tr class="album-1989"><td><img class="portada" src="images/1989.png" alt="Portada de 1989"></td><td>🗽 Wildest Dreams</td><td>1989</td><td>2014</td><td><a class="boton-youtube" href="https://youtu.be/IdneKLhsWOQ" target="_blank" rel="noopener">▶ YouTube</a></td></tr>
+      <tr class="lover"><td><img class="portada" src="images/lover.png" alt="Portada de Lover"></td><td>🦋 Cruel Summer</td><td>Lover</td><td>2019</td><td><a class="boton-youtube" href="https://youtu.be/GrKQvyXpNgc" target="_blank" rel="noopener">▶ YouTube</a></td></tr>
+      <tr class="midnights"><td><img class="portada" src="images/midnights.png" alt="Portada de Midnights"></td><td>🌙 Anti-Hero</td><td>Midnights</td><td>2022</td><td><a class="boton-youtube" href="https://youtu.be/b1kbLwvqugk" target="_blank" rel="noopener">▶ YouTube</a></td></tr>
     </tbody>
   </table>
-  <script>
-    document.getElementById('fecha-actual').textContent = new Date().toLocaleDateString('es-ES', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
-  </script>
 </body>
 </html>
