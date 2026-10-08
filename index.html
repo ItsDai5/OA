@@ -10,6 +10,9 @@
     p { font-size: 1.2rem; }
     .boton-comenzar { margin-top: 32px; padding: 14px 36px; font-size: 1.1rem; font-family: inherit; color: #ffffff; background: #1e6fd9; border: none; border-radius: 8px; cursor: pointer; }
     .boton-comenzar:hover { background: #1858b0; }
+    table { margin: 40px auto 0; border-collapse: collapse; font-size: 1rem; }
+    th, td { padding: 10px 20px; border-bottom: 1px solid #cbd5e0; }
+    th { background: #051c2c; color: #ffffff; }
   </style>
 </head>
 <body>
@@ -19,6 +22,23 @@
   <p id="fecha-actual"></p>
   <button class="boton-comenzar">Comenzar</button>
   <button class="boton-comenzar">Primera hackaton con IA</button>
+  <table>
+    <thead>
+      <tr><th>Canción</th><th>Álbum</th><th>Año</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Love Story</td><td>Fearless</td><td>2008</td></tr>
+      <tr><td>You Belong with Me</td><td>Fearless</td><td>2008</td></tr>
+      <tr><td>All Too Well</td><td>Red</td><td>2012</td></tr>
+      <tr><td>Shake It Off</td><td>1989</td><td>2014</td></tr>
+      <tr><td>Blank Space</td><td>1989</td><td>2014</td></tr>
+      <tr><td>Bad Blood</td><td>1989</td><td>2014</td></tr>
+      <tr><td>Style</td><td>1989</td><td>2014</td></tr>
+      <tr><td>Wildest Dreams</td><td>1989</td><td>2014</td></tr>
+      <tr><td>Cruel Summer</td><td>Lover</td><td>2019</td></tr>
+      <tr><td>Anti-Hero</td><td>Midnights</td><td>2022</td></tr>
+    </tbody>
+  </table>
   <script>
     document.getElementById('fecha-actual').textContent = new Date().toLocaleDateString('es-ES', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
   </script>
